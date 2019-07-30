@@ -243,7 +243,7 @@ body {
   display: block;
   font-size: 10rem;
   font-weight: 400;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.1rem;
   /* only first two properties needed for animation:  */
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -256,7 +256,7 @@ body {
   display: block;
   font-size: 5rem;
   font-weight: 600;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
   /* only first two properties needed for animation:  */
   animation-name: moveInRight;
   animation-duration: 1.5s;
@@ -267,6 +267,8 @@ body {
 }
 .section-books-display {
   background: linear-gradient(to bottom right, grey, #f8f0e4);
+  max-height: 100vh;
+  overflow: hidden;
 }
 .section-books-display .heading {
   width: 50%;
@@ -275,10 +277,10 @@ body {
 .section-books-display .heading .books-h2 {
   display: inline-block;
   font-size: 7rem;
-  padding: 160px 0;
+  padding: 130px 0;
 }
 .section-books-display .books {
-  width: 90%;
+  width: 140%;
   display: flex;
   flex-wrap: wrap;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
@@ -289,11 +291,117 @@ body {
 }
 .section-books-display .books .box {
   position: relative;
-  width: calc(160px * 1.3);
+  width: calc(170px * 1.3);
   height: calc(260px * 1.3);
   margin: 30px 30px 0 0;
   background-image: url(../img/harry-potter.jpg);
   box-shadow: -12px 10px 24px #400000;
+  object-fit: scale-down;
+}
+.section-books-display .books .box1 {
+  background-image: url(../img/GR1.jpg);
+}
+.section-books-display .books .box2 {
+  background-image: url(../img/GR2.jpg);
+}
+.section-books-display .books .box3 {
+  background-image: url(../img/GR3.jpg);
+}
+.section-books-display .books .box4 {
+  background-image: url(../img/GR4.jpg);
+}
+.section-books-display .books .box5 {
+  background-image: url(../img/GR5.jpg);
+}
+.section-books-display .books .box6 {
+  background-image: url(../img/GR6.jpg);
+}
+.section-books-display .books .box7 {
+  background-image: url(../img/GR7.jpg);
+}
+.section-books-display .books .box8 {
+  background-image: url(../img/GR8.jpg);
+}
+.section-books-display .books .box9 {
+  background-image: url(../img/GR9.jpg);
+}
+.section-books-display .books .box11 {
+  background-image: url(../img/GR10.jpg);
+}
+.section-books-display .books .box12 {
+  background-image: url(../img/GR11.jpg);
+}
+.section-books-display .books .box13 {
+  background-image: url(../img/GR12.jpg);
+}
+.section-books-display .books .box14 {
+  background-image: url(../img/GR13.jpg);
+}
+.section-books-display .books .box15 {
+  background-image: url(../img/GR14.jpg);
+}
+.section-books-display .books .box16 {
+  background-image: url(../img/GR15.jpg);
+}
+.section-books-display .books .box17 {
+  background-image: url(../img/GR16.jpg);
+}
+.section-books-display .books .box18 {
+  background-image: url(../img/GR17.jpg);
+}
+.section-books-display .books .box19 {
+  background-image: url(../img/GR18.jpg);
+}
+.section-books-display .books .box20 {
+  background-image: url(../img/GR19.jpeg);
+}
+.section-books-display .books .box21 {
+  background-image: url(../img/GR20.jpeg);
+}
+.section-books-display .books .box22 {
+  background-image: url(../img/GR21.jpeg);
+}
+.section-books-display .books .box23 {
+  background-image: url(../img/GR22.jpeg);
+}
+.section-books-display .books .box24 {
+  background-image: url(../img/GR23.jpeg);
+}
+.section-books-display .books .box25 {
+  background-image: url(../img/GR24.jpeg);
+}
+.section-books-display .books .box26 {
+  background-image: url(../img/GR25.jpeg);
+}
+.section-books-display .books .box27 {
+  background-image: url(../img/GR26.jpeg);
+}
+.section-books-display .books .box28 {
+  background-image: url(../img/GR27.jpeg);
+}
+.section-books-display .books .box21 {
+  background-image: url(../img/GR28.jpeg);
+}
+.section-books-display .books .box22 {
+  background-image: url(../img/GR29.jpeg);
+}
+.section-books-display .books .box23 {
+  background-image: url(../img/GR32.jpeg);
+}
+.section-books-display .books .box24 {
+  background-image: url(../img/GR33.jpeg);
+}
+.section-books-display .books .box25 {
+  background-image: url(../img/GR34.jpeg);
+}
+.section-books-display .books .box26 {
+  background-image: url(../img/GR35.jpeg);
+}
+.section-books-display .books .box27 {
+  background-image: url(../img/GR36.jpeg);
+}
+.section-books-display .books .box28 {
+  background-image: url(../img/GR37.jpeg);
 }
 .footer {
   display: flex;

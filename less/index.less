@@ -165,7 +165,7 @@ body {
     
         font-size: 10rem;
         font-weight: 400;
-        letter-spacing: .8rem;
+        letter-spacing: .1rem;
     
         /* only first two properties needed for animation:  */
         animation-name: moveInLeft;
@@ -178,7 +178,7 @@ body {
         display: block;
         font-size: 5rem;
         font-weight: 600;
-        letter-spacing: .4rem;
+        letter-spacing: .2rem;
     
         /* only first two properties needed for animation:  */
         animation-name: moveInRight;
@@ -197,6 +197,9 @@ body {
 .section-books-display {
 
     background: linear-gradient(to bottom right, grey, @color1);
+    max-height: 100vh;
+
+    overflow: hidden;
 
     .heading {
         width: 50%;
@@ -205,14 +208,14 @@ body {
         .books-h2 {
             display: inline-block;
             font-size: 7rem;
-            padding: 160px 0;
+            padding: 130px 0;
         }
     }
 
 
 
     .books {
-        width:90%;
+        width:140%;
         display:flex;
         flex-wrap:wrap;
         //margin: 100px auto 0 auto; // auto centers
@@ -228,13 +231,53 @@ body {
         
         .box {
             position:relative;
-            width: calc(160px * 1.3);
+            width: calc(170px * 1.3);
             height: calc((260px * 1.3));
             margin: 30px 30px 0 0;
             background-image: url(../img/harry-potter.jpg);
             box-shadow: -12px 10px 24px rgba(64, 0, 0, 1);
+
+            object-fit: scale-down;
         
         }
+
+        .box1 {  background-image: url(../img/GR1.jpg); }
+        .box2 {  background-image: url(../img/GR2.jpg); }
+        .box3 {  background-image: url(../img/GR3.jpg); }
+        .box4 {  background-image: url(../img/GR4.jpg); }
+        .box5 {  background-image: url(../img/GR5.jpg);  }
+        .box6 {  background-image: url(../img/GR6.jpg);  }
+        .box7 {  background-image: url(../img/GR7.jpg);  }
+        .box8 {  background-image: url(../img/GR8.jpg);  }
+        .box9 {  background-image: url(../img/GR9.jpg);  }
+        .box11 { background-image: url(../img/GR10.jpg);  }
+        .box12 { background-image: url(../img/GR11.jpg);  }
+        .box13 { background-image: url(../img/GR12.jpg);  }
+        .box14 { background-image: url(../img/GR13.jpg);  }
+        .box15 { background-image: url(../img/GR14.jpg);  }
+        .box16 { background-image: url(../img/GR15.jpg);  }
+        .box17 { background-image: url(../img/GR16.jpg);  }
+        .box18 { background-image: url(../img/GR17.jpg);  }
+        .box19 { background-image: url(../img/GR18.jpg);  }
+        .box20 { background-image: url(../img/GR19.jpeg);  }
+        .box21 { background-image: url(../img/GR20.jpeg);  }
+        .box22 { background-image: url(../img/GR21.jpeg); }
+        .box23 { background-image: url(../img/GR22.jpeg);  }
+        .box24 { background-image: url(../img/GR23.jpeg);  }
+        .box25 { background-image: url(../img/GR24.jpeg);  }
+        .box26 { background-image: url(../img/GR25.jpeg);  }
+        .box27 { background-image: url(../img/GR26.jpeg);  }
+        .box28 { background-image: url(../img/GR27.jpeg);  }
+        .box21 { background-image: url(../img/GR28.jpeg);  }
+        .box22 { background-image: url(../img/GR29.jpeg); }
+        .box23 { background-image: url(../img/GR32.jpeg);  }
+        .box24 { background-image: url(../img/GR33.jpeg);  }
+        .box25 { background-image: url(../img/GR34.jpeg);  }
+        .box26 { background-image: url(../img/GR35.jpeg);  }
+        .box27 { background-image: url(../img/GR36.jpeg);  }
+        .box28 { background-image: url(../img/GR37.jpeg);  }
+
+
     }
     
 
