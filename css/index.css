@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 1px solid pink !important;
+}
+html {
+  font-size: 62.5%;
+  /* root font size =  desired font size / 16px  */
+}
+body {
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgba(191, 0, 0, 0.8), rgba(128, 0, 0, 0.8));
+}
+.navigation div {
+  padding: 1.5rem 0;
+}
+.navigation div.logo {
+  color: #f8f0e4;
+  padding: 0 4rem;
+}
+.navigation div.nav-links {
+  display: flex;
+  align-items: center;
+}
+.navigation a {
+  color: #f8f0e4;
+  padding: 0 10rem;
+  font-size: 2.2rem;
+}
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to top right, rgba(191, 0, 0, 0.8), rgba(128, 0, 0, 0.8)), url(../img/books-girl.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+.header__text--box {
+  position: absolute;
+  top: 32%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.header__button {
+  padding: 2rem 4rem;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.header__subtext--box {
+  position: absolute;
+  top: 68%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+.section-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex: 0 1 40%;
+  margin-top: 150px;
+  margin-bottom: calc(100px + 5vh);
+}
+.section-about__content {
+  flex: 0 1 40%;
+}
+.section-about__content h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.8rem;
+}
+.section-about__content p {
+  font-size: 2.3rem;
+  font-weight: 400;
+  letter-spacing: 1.1;
+}
+.section-about__graphic {
+  flex: 0 1 40%;
+}
+.section-about__img {
+  width: 100%;
+  border-radius: 15px;
+}
+.heading-primary {
+  color: #fff;
+  margin-bottom: 6rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 10rem;
+  font-weight: 400;
+  letter-spacing: 0.8rem;
+  /* only first two properties needed for animation:  */
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+  /* before ani starts at beginning of ani */
+  animation-timing-function: ease-out;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  /* only first two properties needed for animation:  */
+  animation-name: moveInRight;
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  /* before ani starts at beginning of ani */
+  animation-timing-function: ease-out;
+}
+.section-books-display {
+  background: linear-gradient(to bottom right, grey, #f8f0e4);
+}
+.section-books-display .heading {
+  width: 50%;
+  margin-left: 120px;
+}
+.section-books-display .heading .books-h2 {
+  display: inline-block;
+  font-size: 7rem;
+  padding: 160px 0;
+}
+.section-books-display .books {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+  position: relative;
+  margin-top: -550px;
+  margin-bottom: -200px;
+  left: 20%;
+}
+.section-books-display .books .box {
+  position: relative;
+  width: calc(160px * 1.3);
+  height: calc(260px * 1.3);
+  margin: 30px 30px 0 0;
+  background-image: url(../img/harry-potter.jpg);
+  box-shadow: -12px 10px 24px #400000;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 14vh;
+  background-color: rgba(191, 0, 0, 0.8);
+  z-index: 243;
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem) /* for performance, stick to only these two */;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-1rem);
+    /* for performance, stick to only these two */
+  }
+  50% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2rem) /* for performance, stick to only these two */;
+  }
+  50% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

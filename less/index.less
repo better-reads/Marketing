@@ -1,0 +1,311 @@
+// Follow the order in the readme
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "global";
+@import "navigation";
+@import "footer";
+@import "home-page";
+
+// 
+@import "test";
+
+// less-watch-compiler less css index.less
+
+
+@color1: rgba(248, 240, 228, 1);
+@color2: rgba(191, 0, 0, 0.8);
+@color3: rgba(128, 0, 0, 0.8);
+@color4: rgba(255, 0, 0, 0.8);
+@color5: rgba(64, 0, 0, 0.8);
+@color6: rgba(230, 0, 0, 0.8);
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 1px solid pink !important;
+}
+
+html {
+    font-size: 62.5%;  /* root font size =  desired font size / 16px  */
+    //defines what one REM is //
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+
+
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, @color2, @color3);
+
+  div {
+      padding: 1.5rem 0;
+  }
+
+  div.logo {
+      color: @color1;
+      padding: 0 4rem;
+  }
+
+  div.nav-links {
+      display: flex;
+      align-items: center;
+  }
+  a {
+      color: @color1;
+      padding: 0 10rem;
+      font-size: 2.2rem;
+  }
+  
+}
+
+.header {
+    position: relative;
+    height: 95vh;
+    background-image: linear-gradient(
+        to top right, 
+        @color2, 
+        @color3), 
+        url(../img/books-girl.jpg);
+    background-size: cover;
+    background-position: center;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+
+    &__text--box {
+        position: absolute; 
+        top: 32%;
+        left: 24%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+    }
+
+    &__button {
+        padding: 2rem 4rem;
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+
+    &__subtext--box {
+        position: absolute; 
+        top: 68%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        text-align: right;
+    }
+}
+
+
+
+.section-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    flex: 0 1 40%;
+    
+    margin-top: 150px;
+    margin-bottom: calc(100px + 5vh);
+
+    &__content {
+        flex: 0 1 40%;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: .8rem;
+            
+        }
+
+        p {
+            font-size: 2.3rem;
+            font-weight: 400;
+            letter-spacing: 1.1;
+        }
+
+    }
+
+    &__graphic {
+        flex: 0 1 40%;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+
+
+
+
+// typography
+.heading-primary {
+    color: #fff;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+    
+        font-size: 10rem;
+        font-weight: 400;
+        letter-spacing: .8rem;
+    
+        /* only first two properties needed for animation:  */
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-delay: 0.4s;
+        animation-fill-mode: backwards; /* before ani starts at beginning of ani */
+        animation-timing-function: ease-out;
+    }
+    &--sub {
+        display: block;
+        font-size: 5rem;
+        font-weight: 600;
+        letter-spacing: .4rem;
+    
+        /* only first two properties needed for animation:  */
+        animation-name: moveInRight;
+        animation-duration: 1.5s;
+        animation-delay: 0.8s;
+        animation-fill-mode: backwards; /* before ani starts at beginning of ani */
+        animation-timing-function: ease-out;
+    }
+}
+
+
+
+
+// isometric
+
+.section-books-display {
+
+    background: linear-gradient(to bottom right, grey, @color1);
+
+    .heading {
+        width: 50%;
+        margin-left: 120px;
+
+        .books-h2 {
+            display: inline-block;
+            font-size: 7rem;
+            padding: 160px 0;
+        }
+    }
+
+
+
+    .books {
+        width:90%;
+        display:flex;
+        flex-wrap:wrap;
+        //margin: 100px auto 0 auto; // auto centers
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+        
+        //
+        position: relative;
+        margin-top: -550px;
+        margin-bottom: -200px;
+        left: 20%;
+    
+
+        
+        .box {
+            position:relative;
+            width: calc(160px * 1.3);
+            height: calc((260px * 1.3));
+            margin: 30px 30px 0 0;
+            background-image: url(../img/harry-potter.jpg);
+            box-shadow: -12px 10px 24px rgba(64, 0, 0, 1);
+        
+        }
+    }
+    
+
+
+}
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+    background-color: @color2;
+    z-index: 243;
+
+    &-1 {
+        
+    }
+
+    &-2 {
+        
+    }
+
+    &-3 {
+        
+    }
+}
+
+
+
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem) 
+        /* for performance, stick to only these two */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-1rem) ;
+        /* for performance, stick to only these two */
+    }
+    50% {
+        transform: translateX(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(2rem) 
+        /* for performance, stick to only these two */
+    }
+    50% {
+        transform: translateX(-2rem)
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
+}
