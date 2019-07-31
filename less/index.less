@@ -100,7 +100,9 @@ body {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     }
     @media @mobile {
-
+        height: 77vh;
+        clip-path: polygon(0 0, 100% 0, 100% 73vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 73vh, 0 100%);
     }
 
 
@@ -115,7 +117,7 @@ body {
             left: 35%;
         }
         @media @mobile {
-
+            left: 40%;
         }
     }
 
@@ -126,9 +128,14 @@ body {
         color: @color2;
         border-radius: 8px;
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
+
+        @media @mobile {
+            padding: .8rem 1.8em;
+            font-size: 1.5rem;
+        }
     }
 
     &__subtext--box {
@@ -142,7 +149,8 @@ body {
             left: 70%;
         }
         @media @mobile {
-
+            top: 70%;
+            left: 65%;    /////////
         }
     }
 }
@@ -209,6 +217,10 @@ body {
     color: #fff;
     margin-bottom: 6rem;
 
+    @media @mobile {
+        margin-bottom: 2rem;
+    }
+
     &--main {
         display: block;
     
@@ -228,7 +240,7 @@ body {
         }
         
         @media @mobile {
-            
+            font-size: 5.5rem;
         }
 
     }
@@ -250,7 +262,7 @@ body {
         }
         
         @media @mobile {
-            
+            font-size: 2.3rem;
         }
     }
 }
@@ -277,15 +289,22 @@ body {
         @media @tablet {
             margin-left: 50px;
         }
+        @media @mobile {
+            margin-left: 20px;
+        }
 
         .books-h2 {
             display: inline-block;
-            font-size: 6rem;
+            font-size: 4.7rem;
             padding: 130px 0;
 
             @media @tablet {
                 font-size: 4rem;
                 padding: 100px 0;
+            }
+            @media @mobile {
+                font-size: 2.5rem;
+                padding: 40px 0;
             }
         }
     }
@@ -301,18 +320,22 @@ body {
         
         //
         position: relative;
-        margin-top: -450px;
+        margin-top: -750px;
         margin-bottom: -200px;
-        margin-left: -150px;
+        margin-left: 50px;
         left: 20%;
 
 
         @media @tablet {
             width:200%;
+        }
+        @media @mobile {
+            width:300%;
+            margin-top: -350px;
 
+            left: 20%;
         }
     
-
         
         .box {
             position:relative;
@@ -323,6 +346,14 @@ body {
             box-shadow: -12px 10px 24px rgba(64, 0, 0, 1);
 
             object-fit: scale-down;
+
+            @media @mobile {
+                width: calc(170px * .7);
+                height: calc((260px *.7));
+                margin: 30px 30px 0 0;
+                background-image: url(../img/harry-potter.jpg);
+                box-shadow: -12px 10px 24px rgba(64, 0, 0, 1);
+            }
         
         }
 

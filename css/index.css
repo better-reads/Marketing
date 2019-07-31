@@ -85,6 +85,13 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   }
 }
+@media (max-width: 500px) {
+  .header {
+    height: 77vh;
+    clip-path: polygon(0 0, 100% 0, 100% 73vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 73vh, 0 100%);
+  }
+}
 .header__text--box {
   position: absolute;
   top: 29%;
@@ -97,6 +104,11 @@ body {
     left: 35%;
   }
 }
+@media (max-width: 500px) {
+  .header__text--box {
+    left: 40%;
+  }
+}
 .header__button {
   padding: 1.5rem 4em;
   border: 1px solid transparent;
@@ -104,9 +116,15 @@ body {
   color: rgba(191, 0, 0, 0.8);
   border-radius: 8px;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .header__button {
+    padding: 0.8rem 1.8em;
+    font-size: 1.5rem;
+  }
 }
 .header__subtext--box {
   position: absolute;
@@ -118,6 +136,12 @@ body {
 @media (max-width: 800px) {
   .header__subtext--box {
     left: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .header__subtext--box {
+    top: 70%;
+    left: 65%;
   }
 }
 .section-about {
@@ -168,6 +192,11 @@ body {
   color: #fff;
   margin-bottom: 6rem;
 }
+@media (max-width: 500px) {
+  .heading-primary {
+    margin-bottom: 2rem;
+  }
+}
 .heading-primary--main {
   display: block;
   font-size: 10rem;
@@ -186,6 +215,11 @@ body {
     font-size: 8rem;
   }
 }
+@media (max-width: 500px) {
+  .heading-primary--main {
+    font-size: 5.5rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 5rem;
@@ -202,6 +236,11 @@ body {
 @media (max-width: 800px) {
   .heading-primary--sub {
     font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .heading-primary--sub {
+    font-size: 2.3rem;
   }
 }
 .section-books-display {
@@ -224,9 +263,14 @@ body {
     margin-left: 50px;
   }
 }
+@media (max-width: 500px) {
+  .section-books-display .heading {
+    margin-left: 20px;
+  }
+}
 .section-books-display .heading .books-h2 {
   display: inline-block;
-  font-size: 6rem;
+  font-size: 4.7rem;
   padding: 130px 0;
 }
 @media (max-width: 800px) {
@@ -235,20 +279,33 @@ body {
     padding: 100px 0;
   }
 }
+@media (max-width: 500px) {
+  .section-books-display .heading .books-h2 {
+    font-size: 2.5rem;
+    padding: 40px 0;
+  }
+}
 .section-books-display .books {
   width: 140%;
   display: flex;
   flex-wrap: wrap;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
   position: relative;
-  margin-top: -450px;
+  margin-top: -750px;
   margin-bottom: -200px;
-  margin-left: -150px;
+  margin-left: 50px;
   left: 20%;
 }
 @media (max-width: 800px) {
   .section-books-display .books {
     width: 200%;
+  }
+}
+@media (max-width: 500px) {
+  .section-books-display .books {
+    width: 300%;
+    margin-top: -350px;
+    left: 20%;
   }
 }
 .section-books-display .books .box {
@@ -259,6 +316,15 @@ body {
   background-image: url(../img/harry-potter.jpg);
   box-shadow: -12px 10px 24px #400000;
   object-fit: scale-down;
+}
+@media (max-width: 500px) {
+  .section-books-display .books .box {
+    width: calc(170px * 0.7);
+    height: calc(260px * 0.7);
+    margin: 30px 30px 0 0;
+    background-image: url(../img/harry-potter.jpg);
+    box-shadow: -12px 10px 24px #400000;
+  }
 }
 .section-books-display .books .box1 {
   background-image: url(../img/GR1.jpg);
