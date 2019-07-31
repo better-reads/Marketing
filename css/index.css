@@ -376,9 +376,29 @@ body {
   min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 50px;
 }
 .profiles__person {
-  flex-basis: 500px;
-  height: 500px;
+  flex-basis: 450px;
   flex-grow: 1;
+  max-width: 450px;
+}
+.profiles__person .person__content {
+  text-align: center;
+}
+.profiles__person .person__content img {
+  width: 75%;
+}
+.profiles__person .person__content .person__name {
+  width: 75%;
+  display: inline-block;
+  text-align: left;
+  font-size: 4rem;
+}
+.profiles__person .person__content .person__text {
+  width: 75%;
+  display: inline-block;
+  text-align: left;
+  font-size: 1.8rem;
 }

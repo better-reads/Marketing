@@ -419,10 +419,38 @@ body {
     min-height: 80vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 50px;
     
     &__person{
-      flex-basis: 500px;
-      height: 500px;
+      flex-basis: 450px;
       flex-grow: 1;
+      max-width: 450px;
+
+      .person__content {
+          //background-color: red;
+          text-align: center;
+
+          img {width: 75%;}
+
+          .person__name {
+            width: 75%;
+            display: inline-block;
+            text-align: left;
+
+            // font formatting
+            font-size: 4rem;
+
+          }
+          .person__text {
+            width: 75%;
+            display: inline-block;
+            text-align: left;
+
+            // font formatting
+            font-size: 1.8rem;
+          }
+      }
+
     }  
   }
