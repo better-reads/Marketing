@@ -21,7 +21,7 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(to right, rgba(191, 0, 0, 0.8), #800000, #ff0000, rgba(191, 0, 0, 0.8));
+  background: linear-gradient(to right, #bf0000, grey);
 }
 .navigation div {
   padding: 0 0;
@@ -75,8 +75,15 @@ body {
   background-image: linear-gradient(to top right, rgba(191, 0, 0, 0.8), rgba(128, 0, 0, 0.8)), url(../img/books-girl.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+@media (max-width: 800px) {
+  .header {
+    height: 82vh;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  }
 }
 .header__text--box {
   position: absolute;
@@ -85,8 +92,13 @@ body {
   transform: translate(-50%, -50%);
   text-align: left;
 }
+@media (max-width: 800px) {
+  .header__text--box {
+    left: 35%;
+  }
+}
 .header__button {
-  padding: 1.7rem 4em;
+  padding: 1.5rem 4em;
   border: 1px solid transparent;
   background-color: white;
   color: rgba(191, 0, 0, 0.8);
@@ -103,17 +115,32 @@ body {
   transform: translate(-50%, -50%);
   text-align: right;
 }
+@media (max-width: 800px) {
+  .header__subtext--box {
+    left: 70%;
+  }
+}
 .section-about {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  flex: 0 1 40%;
   margin-top: 150px;
   margin-bottom: calc(100px + 8vh);
 }
+@media (max-width: 800px) {
+  .section-about {
+    flex-wrap: wrap;
+  }
+}
 .section-about__content {
   flex: 0 1 40%;
+}
+@media (max-width: 800px) {
+  .section-about__content {
+    flex: 0 1 90%;
+    margin-bottom: 50px;
+  }
 }
 .section-about__content h3 {
   font-size: 3rem;
@@ -127,6 +154,11 @@ body {
 }
 .section-about__graphic {
   flex: 0 1 40%;
+}
+@media (max-width: 800px) {
+  .section-about__graphic {
+    flex: 0 1 90%;
+  }
 }
 .section-about__img {
   width: 100%;
@@ -149,6 +181,11 @@ body {
   /* before ani starts at beginning of ani */
   animation-timing-function: ease-out;
 }
+@media (max-width: 800px) {
+  .heading-primary--main {
+    font-size: 8rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 5rem;
@@ -162,19 +199,41 @@ body {
   /* before ani starts at beginning of ani */
   animation-timing-function: ease-out;
 }
+@media (max-width: 800px) {
+  .heading-primary--sub {
+    font-size: 4rem;
+  }
+}
 .section-books-display {
   background: linear-gradient(to bottom right, grey, #f8f0e4);
   max-height: 100vh;
   overflow: hidden;
 }
+@media (max-width: 800px) {
+  .section-books-display {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .section-books-display .heading {
   width: 50%;
   margin-left: 120px;
+}
+@media (max-width: 800px) {
+  .section-books-display .heading {
+    margin-left: 50px;
+  }
 }
 .section-books-display .heading .books-h2 {
   display: inline-block;
   font-size: 6rem;
   padding: 130px 0;
+}
+@media (max-width: 800px) {
+  .section-books-display .heading .books-h2 {
+    font-size: 4rem;
+    padding: 100px 0;
+  }
 }
 .section-books-display .books {
   width: 140%;
@@ -182,10 +241,15 @@ body {
   flex-wrap: wrap;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
   position: relative;
-  margin-top: -550px;
+  margin-top: -450px;
   margin-bottom: -200px;
   margin-left: -150px;
   left: 20%;
+}
+@media (max-width: 800px) {
+  .section-books-display .books {
+    width: 200%;
+  }
 }
 .section-books-display .books .box {
   position: relative;
