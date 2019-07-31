@@ -29,8 +29,23 @@ body {
 .navigation div.logo {
   padding: 0 4rem;
 }
+@media (max-width: 800px) {
+  .navigation div.logo {
+    padding: 0 0rem;
+  }
+}
 .navigation img.logo__img {
   max-height: 90px;
+}
+@media (max-width: 800px) {
+  .navigation img.logo__img {
+    max-height: 70px;
+  }
+}
+@media (max-width: 500px) {
+  .navigation img.logo__img {
+    max-height: 60px;
+  }
 }
 .navigation div.nav-links {
   display: flex;
@@ -41,6 +56,18 @@ body {
   padding: 0 8rem;
   font-size: 2.2rem;
   text-decoration: none;
+}
+@media (max-width: 800px) {
+  .navigation a {
+    padding: 0 4rem;
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .navigation a {
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+  }
 }
 .header {
   position: relative;
@@ -287,8 +314,25 @@ body {
   font-size: 1.6rem;
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  .footer a {
+    font-size: 2.7rem;
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .footer a {
+    padding: 0 0.8rem;
+    font-size: 1.4rem;
+  }
+}
 .footer .logo__img {
   max-height: 90px;
+}
+@media (max-width: 500px) {
+  .footer .logo__img {
+    max-height: 40px;
+  }
 }
 @keyframes moveInBottom {
   0% {
@@ -338,9 +382,16 @@ body {
 }
 .header-about__text--box {
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: left;
+  width: 80vw;
+}
+@media (max-width: 500px) {
+  .header-about__text--box {
+    top: 50%;
+  }
 }
 .heading-primary-about {
   color: #fff;
@@ -359,9 +410,21 @@ body {
   /* before ani starts at beginning of ani */
   animation-timing-function: ease-out;
 }
+@media (max-width: 800px) {
+  .heading-primary-about--main {
+    font-size: 7rem;
+    font-weight: 400;
+  }
+}
+@media (max-width: 500px) {
+  .heading-primary-about--main {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+}
 .heading-primary-about--sub {
   display: block;
-  font-size: 2.1rem !important;
+  font-size: 2.1rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   /* only first two properties needed for animation:  */
@@ -371,6 +434,17 @@ body {
   animation-fill-mode: backwards;
   /* before ani starts at beginning of ani */
   animation-timing-function: ease-out;
+  margin-top: 3rem;
+}
+@media (max-width: 800px) {
+  .heading-primary-about--sub {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .heading-primary-about--sub {
+    font-size: 1.4rem;
+  }
 }
 .profiles {
   min-height: 80vh;
@@ -379,26 +453,75 @@ body {
   justify-content: center;
   margin: 100px 50px;
 }
+@media (max-width: 500px) {
+  .profiles {
+    margin: 50px 0px;
+  }
+}
+@media (max-width: 800px) {
+  .profiles {
+    margin: 50px 0px;
+  }
+}
 .profiles__person {
   flex-basis: 450px;
   flex-grow: 1;
   max-width: 450px;
 }
+@media (max-width: 800px) {
+  .profiles__person {
+    max-width: 550px;
+  }
+}
 .profiles__person .person__content {
   text-align: center;
+  padding: 2rem 0;
 }
 .profiles__person .person__content img {
-  width: 75%;
+  width: 85%;
+}
+@media (max-width: 500px) {
+  .profiles__person .person__content img {
+    width: 95%;
+  }
+}
+@media (max-width: 800px) {
+  .profiles__person .person__content img {
+    width: 95%;
+  }
 }
 .profiles__person .person__content .person__name {
-  width: 75%;
+  width: 85%;
   display: inline-block;
   text-align: left;
-  font-size: 4rem;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+@media (max-width: 500px) {
+  .profiles__person .person__content .person__name {
+    width: 95%;
+  }
+}
+@media (max-width: 800px) {
+  .profiles__person .person__content .person__name {
+    width: 95%;
+  }
 }
 .profiles__person .person__content .person__text {
-  width: 75%;
+  width: 85%;
   display: inline-block;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .profiles__person .person__content .person__text {
+    width: 95%;
+  }
+}
+@media (max-width: 800px) {
+  .profiles__person .person__content .person__text {
+    width: 95%;
+  }
 }
