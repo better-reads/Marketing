@@ -1,14 +1,14 @@
 // less-watch-compiler less css index.less
 
 
-@color1: rgba(248, 240, 228, 1);
+@color1: #f8f0e4;
 @color2: rgba(191, 0, 0, 0.8);
 @color3: rgba(128, 0, 0, 0.8);
 @color4: rgba(255, 0, 0, 0.8);
 @color5: rgba(64, 0, 0, 0.8);
 @color6: rgba(230, 0, 0, 0.8);
 
-
+@color21: #bf0000;
 // 
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 828px)";
@@ -44,8 +44,8 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: linear-gradient(to right,rgba(191, 0, 0, 1), grey);
-  //   background: linear-gradient(to right,rgba(191, 0, 0, 0.8), rgba(128, 0, 0, 1), rgba(255, 0, 0, 1), rgba(191, 0, 0, 0.8));
 
   div {
       padding: 0 0;
@@ -53,6 +53,8 @@ body {
 
   div.logo {
       padding: 0 4rem;
+      display: flex;
+      align-items: center;
 
       @media @tablet { padding: 0 0rem; }
       //@media @mobile { padding: 0 0rem; }
@@ -126,9 +128,9 @@ body {
     }
 
     &__button {
-        padding: 1.5rem 4em;
+        padding: 1.5rem 2.7em;
         border: 1px solid transparent;
-        background-color: white;
+        background-color: @color1;
         color: @color2;
         border-radius: 8px;
         font-size: 2rem;
@@ -220,6 +222,9 @@ body {
             border: 3px solid rgba(191, 0, 0, 1);
             border-radius: 4px;
             font-size: 1.9rem;
+            text-decoration: none;
+            color: black;
+            background-color: rgba(128, 128, 128, .15);;
 
             @media @mobile {
                 font-size: 1.8rem;
@@ -227,6 +232,7 @@ body {
                 padding: .8rem 2rem;
             }
         }
+
 
     }
 
@@ -249,7 +255,7 @@ body {
 
 // typography
 .heading-primary {
-    color: #fff;
+    color: @color1;
     margin-bottom: 6rem;
 
     @media @mobile {
@@ -462,13 +468,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 18vh;
+    height: 10vh;
     background-color: @color2;
 
     @media @mobile {
     }
     
-    a {
+    a,p {
         color: @color1;
         padding: 0 8rem;
         font-size: 1.6rem;
@@ -492,10 +498,16 @@ body {
             max-height: 40px;
         }
     }
+
+
 }
 
 
-
+.inline-anchor {
+    display: inline;
+    padding: 0 !important;
+    font-size: 0 !important;
+}
 
 @keyframes moveInBottom {
     0% {
