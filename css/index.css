@@ -255,12 +255,13 @@ body {
   }
 }
 .section-books-display .heading {
-  width: 50%;
-  margin-left: 120px;
+  width: 40%;
+  margin-left: 100px;
 }
 @media (max-width: 800px) {
   .section-books-display .heading {
     margin-left: 50px;
+    width: 50%;
   }
 }
 @media (max-width: 500px) {
@@ -270,7 +271,7 @@ body {
 }
 .section-books-display .heading .books-h2 {
   display: inline-block;
-  font-size: 4.7rem;
+  font-size: 4.6rem;
   padding: 130px 0;
 }
 @media (max-width: 800px) {
@@ -281,7 +282,7 @@ body {
 }
 @media (max-width: 500px) {
   .section-books-display .heading .books-h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding: 40px 0;
   }
 }
@@ -296,9 +297,20 @@ body {
   margin-left: 50px;
   left: 20%;
 }
+@media (min-width: 2100px) {
+  .section-books-display .books {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .section-books-display .books {
+    width: 220%;
+  }
+}
 @media (max-width: 800px) {
   .section-books-display .books {
     width: 200%;
+    margin-top: -550px;
   }
 }
 @media (max-width: 500px) {
