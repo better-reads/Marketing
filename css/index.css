@@ -507,7 +507,7 @@ body {
 .footer a,
 .footer p {
   color: #f8f0e4;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 @media (max-width: 828px) {
@@ -519,7 +519,7 @@ body {
 @media (max-width: 500px) {
   .footer a,
   .footer p {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 .footer .logo__img {
