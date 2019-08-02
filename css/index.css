@@ -644,7 +644,7 @@ body {
 }
 @media (max-width: 500px) {
   .heading-primary-about--sub {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 .profiles {
