@@ -52,10 +52,12 @@ body {
 .navigation div.nav-links {
   display: flex;
   align-items: center;
+  width: 75%;
+  justify-content: space-around;
 }
 .navigation a {
   color: #f8f0e4;
-  padding: 0 8rem;
+  padding: 0 0;
   font-size: 2.2rem;
   text-decoration: none;
 }
@@ -505,21 +507,18 @@ body {
 .footer a,
 .footer p {
   color: #f8f0e4;
-  padding: 0 8rem;
   font-size: 1.6rem;
   text-decoration: none;
 }
 @media (max-width: 828px) {
   .footer a,
   .footer p {
-    font-size: 2.7rem;
-    padding: 0 3rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
   .footer a,
   .footer p {
-    padding: 0 0.8rem;
     font-size: 1.4rem;
   }
 }
