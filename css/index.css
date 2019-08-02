@@ -128,6 +128,13 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  /* only first two properties needed for animation:  */
+  animation-name: moveInRight;
+  animation-duration: 0.8s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  /* before ani starts at beginning of ani */
+  animation-timing-function: ease-out;
 }
 @media (max-width: 500px) {
   .header__button {

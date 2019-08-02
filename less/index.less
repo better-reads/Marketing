@@ -140,6 +140,13 @@ body {
         text-transform: uppercase;
         text-decoration: none;
 
+        /* only first two properties needed for animation:  */
+        animation-name: moveInRight;
+        animation-duration: .8s;
+        animation-delay: 0.8s;
+        animation-fill-mode: backwards; /* before ani starts at beginning of ani */
+        animation-timing-function: ease-out;
+
         @media @mobile {
             padding: .8rem 1.8em;
             font-size: 1.5rem;
