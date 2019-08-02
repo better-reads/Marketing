@@ -667,7 +667,7 @@ body {
 .profiles__person {
   flex-basis: 450px;
   flex-grow: 1;
-  max-width: 450px;
+  max-width: 750px;
 }
 @media (max-width: 828px) {
   .profiles__person {
@@ -701,28 +701,32 @@ body {
 @media (max-width: 500px) {
   .profiles__person .person__content .person__name {
     width: 95%;
+    font-size: 4rem;
   }
 }
 @media (max-width: 828px) {
   .profiles__person .person__content .person__name {
     width: 95%;
+    font-size: 4rem;
   }
 }
 .profiles__person .person__content .person__text {
   width: 85%;
   display: inline-block;
   text-align: left;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   padding-top: 0;
   padding-bottom: 2rem;
 }
 @media (max-width: 500px) {
   .profiles__person .person__content .person__text {
     width: 95%;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 828px) {
   .profiles__person .person__content .person__text {
     width: 95%;
+    font-size: 2.5rem;
   }
 }
