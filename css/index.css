@@ -63,13 +63,13 @@ body {
 }
 @media (max-width: 828px) {
   .navigation a {
-    padding: 0 4rem;
+    padding: 0 0;
     font-size: 2.2rem;
   }
 }
 @media (max-width: 500px) {
   .navigation a {
-    padding: 0 1.5rem;
+    padding: 0 0rem;
     font-size: 1.6rem;
   }
 }
