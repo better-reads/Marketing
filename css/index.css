@@ -69,7 +69,7 @@ body {
 }
 @media (max-width: 500px) {
   .navigation a {
-    padding: 0 0rem;
+    padding: 0 0;
     font-size: 1.6rem;
   }
 }
