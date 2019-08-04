@@ -22,12 +22,12 @@
 }
 @media (max-width: 800px) {
   .navigation img.logo__img {
-    max-height: 70px;
+    max-height: 50px;
   }
 }
 @media (max-width: 500px) {
   .navigation img.logo__img {
-    max-height: 60px;
+    max-height: 400px;
   }
 }
 .navigation div.nav-links {
@@ -45,20 +45,20 @@
 @media (max-width: 800px) {
   .navigation a {
     padding: 0 0;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 500px) {
   .navigation a {
     padding: 0 0;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
+  height: 7vh;
   background-color: rgba(191, 0, 0, 0.8);
 }
 .footer a,
@@ -70,13 +70,13 @@
 @media (max-width: 800px) {
   .footer a,
   .footer p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 500px) {
   .footer a,
   .footer p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 .footer .logo__img {
