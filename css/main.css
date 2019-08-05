@@ -385,7 +385,7 @@
 }
 @media (max-width: 507px) {
   .section-books-display {
-    min-height: 45vh;
+    min-height: 55vh;
   }
 }
 .section-books-display .heading {
