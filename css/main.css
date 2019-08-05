@@ -337,7 +337,7 @@
 }
 @media (max-width: 507px) {
   .section-about-2__content {
-    padding: 0 2%;
+    padding: 0 3%;
     text-align: center;
   }
 }
@@ -709,7 +709,6 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  border: 1px solid lightblue !important;
 }
 html {
   font-size: 62.5%;
