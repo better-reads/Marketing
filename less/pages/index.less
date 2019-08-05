@@ -258,13 +258,17 @@
 
     &__content {
         flex: 0 1 35%;
-
         
         @media @tablet {
             flex: 0 1 90%;
             //order: 2;
             // need space between content and graphic in tablet/mobile view
             margin-bottom: 50px;
+        }
+
+        @media @mobile {
+            padding: 0 2%;
+            text-align: center;
         }
 
         h3 {
