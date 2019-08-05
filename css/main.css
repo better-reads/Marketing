@@ -25,9 +25,9 @@
     max-height: 50px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .navigation img.logo__img {
-    max-height: 400px;
+    max-height: 40px;
   }
 }
 .navigation div.nav-links {
@@ -48,7 +48,7 @@
     font-size: 1.6rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .navigation a {
     padding: 0 0;
     font-size: 1.4rem;
@@ -73,7 +73,7 @@
     font-size: 1.6rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .footer a,
   .footer p {
     font-size: 1.4rem;
@@ -82,7 +82,7 @@
 .footer .logo__img {
   max-height: 60px;
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .footer .logo__img {
     max-height: 40px;
   }
@@ -106,7 +106,7 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .header {
     height: 70vh;
     clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
@@ -126,7 +126,7 @@
     left: 35%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .header__text--box {
     left: 40%;
   }
@@ -154,7 +154,7 @@
     font-size: 1.5rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .header__button {
     padding: 0.8rem 1.8em;
     font-size: 1.5rem;
@@ -166,13 +166,13 @@
 }
 @media (max-width: 800px) {
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
 }
 .heading-primary {
   color: #f8f0e4;
   margin-bottom: 6rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .heading-primary {
     margin-bottom: 2rem;
   }
@@ -195,7 +195,7 @@
     font-size: 6rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .heading-primary--main {
     font-size: 4.5rem;
   }
@@ -218,7 +218,7 @@
     font-size: 2.3rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .heading-primary--sub {
     font-size: 1.8rem;
   }
@@ -252,7 +252,7 @@
   line-height: 1.2;
   margin-bottom: 25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-about__content h3 {
     font-size: 2.4rem;
   }
@@ -263,7 +263,7 @@
   line-height: 1.1;
   margin-bottom: 25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-about__content p {
     font-size: 1.8rem;
   }
@@ -278,7 +278,7 @@
   color: black;
   background-color: rgba(128, 128, 128, 0.15);
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-about__content a {
     font-size: 1.8rem;
     border: 2px solid #bf0000;
@@ -341,7 +341,7 @@
   line-height: 1;
   margin-bottom: 25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-about-2__content h3 {
     font-size: 2.4rem;
   }
@@ -377,7 +377,7 @@
     flex-direction: column;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-books-display {
     min-height: 35vh;
   }
@@ -393,7 +393,7 @@
     width: 50%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-books-display .heading {
     margin-left: 30px;
   }
@@ -411,7 +411,7 @@
     padding: 100px 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-books-display .heading .books-h2 {
     font-size: 2.3rem;
     padding: 40px 0;
@@ -449,7 +449,7 @@
     margin-top: -600px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-books-display .books {
     width: 250%;
     margin-top: -350px;
@@ -465,7 +465,7 @@
   box-shadow: -12px 10px 24px #400000;
   object-fit: cover;
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .section-books-display .books .box {
     width: calc(170px * 0.5);
     height: calc(260px * 0.5);
@@ -628,7 +628,7 @@
     font-weight: 400;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .about-us-header__content .heading-primary--main {
     font-size: 5rem;
     font-weight: 400;
@@ -653,7 +653,7 @@
     font-size: 2.5rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
   .about-us-header__content .heading-primary--sub {
     font-size: 2rem;
   }
@@ -664,7 +664,7 @@
   justify-content: center;
   margin: 5% 7%;
 }
-@media (max-width: 500px) {
+@media (max-width: 507px) {
 }
 @media (max-width: 800px) {
 }
