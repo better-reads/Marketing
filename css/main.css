@@ -385,6 +385,7 @@
 .section-books-display .heading {
   width: 40%;
   margin-left: 100px;
+  margin-top: 15px;
 }
 @media (max-width: 800px) {
   .section-books-display .heading {
@@ -394,11 +395,13 @@
 }
 @media (max-width: 500px) {
   .section-books-display .heading {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
 .section-books-display .heading .books-h2 {
   display: inline-block;
+  color: black;
+  font-weight: 400;
   font-size: 3rem;
   padding: 130px 0;
 }
@@ -410,7 +413,7 @@
 }
 @media (max-width: 500px) {
   .section-books-display .heading .books-h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding: 40px 0;
   }
 }
