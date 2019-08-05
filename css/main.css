@@ -135,7 +135,7 @@
   padding: 1.5rem 2.3em;
   background-color: #f8f0e4;
   color: rgba(191, 0, 0, 0.8);
-  border-radius: 8px;
+  border-radius: 50px;
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -148,6 +148,12 @@
   /* before ani starts at beginning of ani */
   animation-timing-function: ease-out;
 }
+@media (max-width: 800px) {
+  .header__button {
+    padding: 1.2rem 1.8em;
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 500px) {
   .header__button {
     padding: 0.8rem 1.8em;
@@ -158,21 +164,9 @@
   text-align: right;
   margin: 0 7%;
 }
-@media (max-width: 1028px) {
-  .header__subtext--box {
-    left: 72%;
-  }
-}
 @media (max-width: 800px) {
-  .header__subtext--box {
-    left: 70%;
-  }
 }
 @media (max-width: 500px) {
-  .header__subtext--box {
-    top: 70%;
-    left: 65%;
-  }
 }
 .heading-primary {
   color: #f8f0e4;
@@ -198,12 +192,12 @@
 }
 @media (max-width: 800px) {
   .heading-primary--main {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 @media (max-width: 500px) {
   .heading-primary--main {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
 }
 .heading-primary--sub {
@@ -221,12 +215,12 @@
 }
 @media (max-width: 800px) {
   .heading-primary--sub {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 @media (max-width: 500px) {
   .heading-primary--sub {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 }
 .section-about {
